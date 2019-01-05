@@ -1,0 +1,484 @@
+/**ROOT STUFF**/
+html {
+    background-size: cover;
+    background-image: url(billeder/pawel-nolbert-291146-unsplash.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    color: white;
+    font-family: 'share tech mono', monospace;
+    font-size: 15px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(51, 34, 59, .4);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'share tech mono', monospace;
+}
+
+h4 {
+    margin: 2rem 0 0 0;
+}
+
+h5 {
+    margin: 1rem 3rem 0 0;
+}
+
+footer h2 {
+    color: white;
+    margin: 1em 0 0.4em 1em;
+    position: fixed;
+    bottom: 1rem;
+    font-size: 1.3em;
+    text-shadow: 2px 1px 4px #000000,
+        1px 1px 10px #000000,
+        4px 0 20px #000000;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+#tema1,
+#tema2,
+#tema3,
+#tema4 {
+    font-family: tahoma;
+}
+
+video {
+    margin-top: 3rem;
+    width: 100%;
+    height: auto;
+}
+
+/* NAVBAR CLASSES >>>>>>>>>>>>>>>>>>>>>>> */
+body.gradientBody {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .6) 60%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    height: 4rem;
+}
+
+.hamburgerIcon,
+.hamburgerIcon:after,
+.hamburgerIcon:before {
+    cursor: pointer;
+    width: 2rem;
+    height: 0.33rem;
+    background-color: white;
+    margin-top: 2rem;
+    margin-left: 1.33rem;
+}
+
+.hamburgerIcon:after,
+.hamburgerIcon:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    margin-top: -0.66rem;
+    margin-left: 0.33rem;
+}
+
+.hamburgerIcon:before {
+    margin-top: 0.66rem;
+    margin-left: -0.33rem;
+}
+
+/* DROPDOWN MENU */
+.dropdownItems {
+    margin-top: 2.5rem;
+    margin-left: 1em;
+    display: none;
+}
+
+.dropdownItems li p {
+    padding-left: 3rem;
+}
+
+ul li:first-of-type {
+    margin-bottom: 2rem;
+}
+
+li {
+    margin-bottom: 1.5rem;
+}
+
+/* INDEX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+main {
+    color: white;
+    margin: 5rem 0 4.4rem 0;
+    height: 80vh;
+
+    /* Hides scrollbar */
+    width: 110vw;
+    overflow-y: scroll;
+}
+
+a,
+a:visited {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+main a {
+    color: #14a09b;
+}
+
+main a:visited {
+    color: #724fc4;
+}
+
+#landingPage {
+    height: 76.3vh;
+    color: white;
+}
+
+#landingPage h1 {
+    text-align: center;
+    line-height: 60vh;
+}
+
+#landingPage p:first-of-type {
+    text-align: center;
+    margin-top: -28vh;
+}
+
+#landingPage p.arrow {
+    text-align: center;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#landingPage div {
+    padding-top: 2vh;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        margin-top: -0.2rem;
+    }
+
+    30% {
+        margin-top: 0rem;
+    }
+
+    100% {
+        margin-top: -0.2rem;
+    }
+}
+
+
+/* ARTICLES AND SECTIONS >>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* SECTION HEADER */
+section {
+    padding-right: 5vw;
+}
+
+section h2 {
+    text-transform: uppercase;
+    margin: 6rem 0 1rem 1rem;
+    text-shadow: 2px 1px 4px #000000,
+        1px 1px 10px #000000,
+        4px 0 20px #000000;
+}
+
+/* ARTICLE BACKGROUNDS */
+article {
+    padding: 1rem 2rem 3.3rem 1rem;
+    background-color: rgba(0, 0, 0, .7);
+    overflow-x: hidden;
+}
+
+@media(min-width: 768px) {
+    article {
+        padding: 1rem 6rem 3.3rem 1rem;
+    }
+}
+
+@media(min-width: 1200px) {
+    .articleContentWrapper {
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+
+    section h2 {
+        font-size: 2em;
+        margin-left: -2.5rem;
+        width: 900px;
+    }
+}
+
+article:nth-of-type(even) {
+    background-color: rgba(20, 0, 32, .7);
+}
+
+.articleContentWrapper {
+    max-width: 900px;
+}
+
+
+section hr {
+    margin-top: -1rem;
+    margin-left: -1rem;
+    padding-bottom: 2.3rem;
+    width: 100vw;
+    color: rgba(119, 141, 232, 0.82);
+
+
+    /*GRADIENT*/
+    /*border-image: linear-gradient(to right, darkred, red, orange, yellow, green, cyan, blue, violet) 20%;*/
+    border-top: 1px solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+/*TEMA 1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.moodboard {
+    margin: 3rem 0;
+}
+
+.moodboard p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.moodboard img {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    height: auto;
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .moodboard p,
+    .moodboard img {
+        width: 100%;
+    }
+}
+
+/*CONTENT PDF*/
+.contentPdf embed {
+    width: 100%;
+    height: 450px;
+}
+
+.splashImage img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 3rem;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*TEMA 2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+/*TEMA 3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* ARTICLE CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#styletile .imageRow {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.imageWrapper {
+    margin-bottom: 1rem;
+    min-width: 100px;
+    /*max-width: 300px;*/
+    display: inline-block;
+}
+
+.imageWrapper img {
+    width: 100%;
+}
+
+@media (max-width: 400px) {
+    .imageRow {
+        flex-wrap: wrap;
+    }
+
+    .imageWrapper {
+        min-width: 100%;
+    }
+}
+
+/*DESKTOP VERSION >>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+    #styletile .imageRow {
+        justify-content: space-between;
+    }
+
+    .imageWrapper {
+        margin-right: 3rem;
+    }
+
+    .imageRow .imageWrapper:last-of-type {
+        margin-right: 0;
+    }
+}
+
+/*SCENE MED FIGURDESIGN */
+.singleImagewrapper img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+}
+
+.sceneRow {
+    display: inline-block;
+}
+
+/***BESKRIVELSE AF FORM */
+
+.circleWrapper1 {
+    background-image: url(billeder/dot1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 300px;
+}
+
+.circleWrapper2 {
+    background-image: url(billeder/dot2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 300px;
+}
+
+.circleWrapper3 {
+    background-image: url(billeder/dot3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 300px;
+}
+
+.circles {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0 4rem 0;
+}
+
+@media (max-width: 474px) {
+
+    .circleWrapper1,
+    .circleWrapper2,
+    .circleWrapper3 {
+        height: 140px;
+    }
+}
+
+/*****COLOURBOKSE**/
+.colourBox div {
+    height: 7vw;
+    width: 7vw;
+    border: 1px solid black;
+}
+
+.colour1 {
+    background-color: #019F55;
+}
+
+.colour2 {
+    background-color: #002E50;
+}
+
+.colour3 {
+    background-color: #832F63;
+}
+
+.colour4 {
+    background-color: #F12143;
+}
+
+.colour5 {
+    background-color: #F3BE37;
+}
+
+.colour6 {
+    background-color: #FB4A3A;
+}
+
+.colour7 {
+    background-color: #204D6A;
+}
+
+.colour8 {
+    background-color: #5F506F;
+}
+
+.colourBox {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0rem 0.5rem 3rem 0;
+}
+
+/***UI**/
+.uiElements img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*PROJEKT SEX OG SAMFUND >>>*/
+.projektSpil img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*TEMA 4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.temaDokumentation embed {
+    width: 100%;
+    height: 450px;
+}
+
+.webprototype img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.webprototype + h5 {
+    margin: 0;
+}
+
+.temaDokumentation li,
+ul {
+    margin-top: 1rem;
+    list-style: circle;
+}
+
+.temaDokumentation ul li:first-of-type {
+    margin-bottom: 0;
+}
+
+.temaDokumentation ul li ul li {
+    margin-left: 1rem;
+}
